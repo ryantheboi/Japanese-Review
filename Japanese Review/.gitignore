@@ -1,0 +1,19 @@
+# Debug files
+*.dll
+*.pdb
+*.AssemblyInfo.cs
+*.FileListAbsolute.txt
+
+# obj files
+*.cache
+*.props
+*.targets
+*.json
+
+# .idea from rider
+*.xml
+*.iml
+*.sln
+
+# .user file
+.user
