@@ -1,6 +1,7 @@
 ﻿/*
  * @author - Ryan Chung
  * This program performs a sequential quick sort on a collection of generic objects
+ * Will be used to sort many Japanese words by their romaji
  */
 
 using System;
