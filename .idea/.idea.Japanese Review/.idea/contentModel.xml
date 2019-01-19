@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Ryan\.Rider2018.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\Ryan\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Ryan\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_Japanese Review.-742601805.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Ryan\Documents\GitHub\Japanese-Review" t="IncludeFlat">
+      <e p="Japanese Review" t="IncludeRecursive">
+        <e p=".gitignore" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Japanese Review.csproj" t="IncludeRecursive" />
+        <e p="JapaneseWord.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Japanese Review.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="QuickSort.cs" t="Include" />
+      </e>
+      <e p="Japanese Review.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
