@@ -5,6 +5,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Japanese_Review
 {
@@ -14,7 +15,6 @@ namespace Japanese_Review
         {
             // 20 chapters of vocab from the genki textbook
             var genkiVocab = new JapaneseWord[20][];
-
         }
     }
 }
