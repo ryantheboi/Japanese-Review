@@ -94,12 +94,12 @@ namespace Japanese_Review
                 new JapaneseWord("おにいさん", "oniisan", new String[] {"older brother"}, "hiragana", "", ""),
                 new JapaneseWord("いもうと", "imouto", new String[] {"younger sister"}, "hiragana", "", ""),
                 new JapaneseWord("おとうと", "otouto", new String[] {"younger brother"}, "hiragana", "", ""),
-                new JapaneseWord(" ", "Amerika", new String[] {"U.S.A."}, "katakana", "", ""),
-                new JapaneseWord(" ", "Igirisu", new String[] {"Britain"}, "katakana", "", ""),
-                new JapaneseWord(" ", "Oosutoraria", new String[] {"Australia"}, "katakana", "", ""),
-                new JapaneseWord(" ", "Suweeden", new String[] {"Sweden"}, "katakana", "", ""),
-                new JapaneseWord(" ", "konpyuutaa", new String[] {"computer"}, "katakana", "", ""),
-                new JapaneseWord(" ", "bijinesu", new String[] {"business"}, "katakana", "", "")
+                new JapaneseWord("アメリカ", "Amerika", new String[] {"U.S.A."}, "katakana", "", ""),
+                new JapaneseWord("イギリス", "Igirisu", new String[] {"Britain"}, "katakana", "", ""),
+                new JapaneseWord("オーストラリア", "Oosutoraria", new String[] {"Australia"}, "katakana", "", ""),
+                new JapaneseWord("スウェーデン", "Suweeden", new String[] {"Sweden"}, "katakana", "", ""),
+                new JapaneseWord("コンピューター", "konpyuutaa", new String[] {"computer"}, "katakana", "", ""),
+                new JapaneseWord("ビジネス", "bijinesu", new String[] {"business"}, "katakana", "", "")
             };
 
             var chapter2 = new JapaneseWord[]
@@ -140,12 +140,12 @@ namespace Japanese_Review
                 new JapaneseWord("いくら", "ikura", new String[] {"how much"}, "hiragana", "", ""),
                 new JapaneseWord("~えん", "~en", new String[] {"~yen"}, "hiragana", "", ""),
                 new JapaneseWord("たかい", "takai", new String[] {"expensive", "high"}, "hiragana", "i", ""),
-                new JapaneseWord(" ", "menyuu", new String[] {"menu"}, "katakana", "", ""),
-                new JapaneseWord(" ", "jiinzu", new String[] {"jeans"}, "katakana", "", ""),
-                new JapaneseWord(" ", "tiishatsu", new String[] {"T-shirt"}, "katakana", "", ""),
-                new JapaneseWord(" ", "nooto", new String[] {"notebook"}, "katakana", "", ""),
-                new JapaneseWord(" ", "pen", new String[] {"pen"}, "katakana", "", ""),
-                new JapaneseWord(" ", "toire", new String[] {"toilet", "restroom"}, "katakana", "", "")
+                new JapaneseWord("メニュー", "menyuu", new String[] {"menu"}, "katakana", "", ""),
+                new JapaneseWord("ジーンズ", "jiinzu", new String[] {"jeans"}, "katakana", "", ""),
+                new JapaneseWord("Tシャツ", "tiishatsu", new String[] {"T-shirt"}, "katakana", "", ""),
+                new JapaneseWord("ノート", "nooto", new String[] {"notebook"}, "katakana", "", ""),
+                new JapaneseWord("ペン", "pen", new String[] {"pen"}, "katakana", "", ""),
+                new JapaneseWord("トイレ", "toire", new String[] {"toilet", "restroom"}, "katakana", "", "")
             };
 
             var chapter3 = new JapaneseWord[]
