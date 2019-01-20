@@ -194,13 +194,13 @@ namespace Japanese_Review
                 new JapaneseWord("ちょっと", "chotto", new String[] {"a little"}, "hiragana", "", ""),
                 new JapaneseWord("ときどき", "tokidoki", new String[] {"sometimes"}, "hiragana", "", ""),
                 new JapaneseWord("よく", "yoku", new String[] {"often", "much"}, "hiragana", "", ""),
-                new JapaneseWord("", "supotsu", new String[] {"sports"}, "katakana", "", ""),
-                new JapaneseWord(" ", "deeto", new String[] {"date"}, "katakana", "", ""),
-                new JapaneseWord(" ", "tenisu", new String[] {"tennis"}, "katakana", "", ""),
-                new JapaneseWord(" ", "terebi", new String[] {"TV"}, "katakana", "", ""),
-                new JapaneseWord(" ", "aisukureemu", new String[] {"ice cream"}, "katakana", "", ""),
-                new JapaneseWord(" ", "koohii", new String[] {"coffee"}, "katakana", "", ""),
-                new JapaneseWord(" ", "hanbaagaa", new String[] {"hamburger"}, "katakana", "", "")
+                new JapaneseWord("スポツ", "supotsu", new String[] {"sports"}, "katakana", "", ""),
+                new JapaneseWord("デート", "deeto", new String[] {"date"}, "katakana", "", ""),
+                new JapaneseWord("テニス", "tenisu", new String[] {"tennis"}, "katakana", "", ""),
+                new JapaneseWord("テレビ", "terebi", new String[] {"TV"}, "katakana", "", ""),
+                new JapaneseWord("アイスクレーム", "aisukureemu", new String[] {"ice cream"}, "katakana", "", ""),
+                new JapaneseWord("コーヒー", "koohii", new String[] {"coffee"}, "katakana", "", ""),
+                new JapaneseWord("ハンバーガー", "hanbaagaa", new String[] {"hamburger"}, "katakana", "", "")
             };
 
             var chapter4 = new JapaneseWord[]
@@ -240,14 +240,14 @@ namespace Japanese_Review
                 new JapaneseWord("わかる", "wakaru", new String[] {"to understand"}, "hiragana", "", ""),
                 new JapaneseWord("いる", "iru", new String[] {"to exist", "is in...", "stays at..."}, "hiragana", "", ""),
                 new JapaneseWord("あるばいと", "arubaito", new String[] {"part-time job"}, "katakana", "", ""),
-                new JapaneseWord("", "kurasu", new String[] {"class"}, "katakana", "", ""),
-                new JapaneseWord(" ", "pan", new String[] {"bread"}, "katakana", "", ""),
-                new JapaneseWord(" ", "meeru", new String[] {"e-mail"}, "katakana", "", ""),
-                new JapaneseWord(" ", "suupaa", new String[] {"supermarket"}, "katakana", "", ""),
-                new JapaneseWord(" ", "depaato", new String[] {"department store"}, "katakana", "", ""),
-                new JapaneseWord(" ", "basutei", new String[] {"bus stop"}, "katakana", "", ""),
-                new JapaneseWord(" ", "hoteru", new String[] {"hotel"}, "katakana", "", ""),
-                new JapaneseWord(" ", "resutoran", new String[] {"restaurant"}, "katakana", "", "")
+                new JapaneseWord("クラス", "kurasu", new String[] {"class"}, "katakana", "", ""),
+                new JapaneseWord("パン", "pan", new String[] {"bread"}, "katakana", "", ""),
+                new JapaneseWord("メール", "meeru", new String[] {"e-mail"}, "katakana", "", ""),
+                new JapaneseWord("スーパー", "suupaa", new String[] {"supermarket"}, "katakana", "", ""),
+                new JapaneseWord("デパート", "depaato", new String[] {"department store"}, "katakana", "", ""),
+                new JapaneseWord("バステイ", "basutei", new String[] {"bus stop"}, "katakana", "", ""),
+                new JapaneseWord("ホテル", "hoteru", new String[] {"hotel"}, "katakana", "", ""),
+                new JapaneseWord("レストラン", "resutoran", new String[] {"restaurant"}, "katakana", "", "")
             };
 
             var chapter5 = new JapaneseWord[]
@@ -295,8 +295,8 @@ namespace Japanese_Review
                 new JapaneseWord("のる", "noru", new String[] {"to ride", "to board"}, "hiragana", "", ""),
                 new JapaneseWord("やる", "yaru", new String[] {"to do", "to perform"}, "hiragana", "", ""),
                 new JapaneseWord("でかける", "dekakeru", new String[] {"to go out"}, "hiragana", "", ""),
-                new JapaneseWord(" ", "saafin", new String[] {"surfing"}, "katakana", "", ""),
-                new JapaneseWord(" ", "basu", new String[] {"bus"}, "katakana", "", "")
+                new JapaneseWord("サーフィン", "saafin", new String[] {"surfing"}, "katakana", "", ""),
+                new JapaneseWord("バス", "basu", new String[] {"bus"}, "katakana", "", "")
             };
 
             var chapter6 = new JapaneseWord[]
@@ -341,9 +341,9 @@ namespace Japanese_Review
                 new JapaneseWord("わすれる", "wasureru", new String[] {"to forget", "to leave behind"}, "hiragana", "", ""),
                 new JapaneseWord("つれてくる", "tsuretekuru", new String[] {"to bring (person)"}, "hiragana", "", ""),
                 new JapaneseWord("もってくる", "mottekuru", new String[] {"to bring (thing)"}, "hiragana", "", ""),
-                new JapaneseWord(" ", "shawaa", new String[] {"shower"}, "katakana", "", ""),
-                new JapaneseWord(" ", "pasokon", new String[] {"computer"}, "katakana", "", ""),
-                new JapaneseWord(" ", "peeji", new String[] {"page"}, "katakana", "", "")
+                new JapaneseWord("シャワー", "shawaa", new String[] {"shower"}, "katakana", "", ""),
+                new JapaneseWord("パソコン", "pasokon", new String[] {"computer"}, "katakana", "", ""),
+                new JapaneseWord("ページ", "peeji", new String[] {"page"}, "katakana", "", "")
             };
             
             var chapter7 = new JapaneseWord[]
@@ -388,10 +388,10 @@ namespace Japanese_Review
                 new JapaneseWord("つとめる", "tsutomeru", new String[]{"to work for"}, "hiragana", "", ""), 
                 new JapaneseWord("やせる", "yaseru", new String[]{"to lose weight"}, "hiragana", "", ""), 
                 new JapaneseWord("けっこんする", "kekkonsuru", new String[]{"to get married"}, "hiragana", "", ""), 
-                new JapaneseWord(" ", "apaato", new String[]{"apartment"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "geemu", new String[]{"game"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "konbini", new String[]{"convenience store"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "saakuru", new String[]{"club activity"}, "katakana", "", "")
+                new JapaneseWord("アパート", "apaato", new String[]{"apartment"}, "katakana", "", ""), 
+                new JapaneseWord("ゲーム", "geemu", new String[]{"game"}, "katakana", "", ""), 
+                new JapaneseWord("コンビニ", "konbini", new String[]{"convenience store"}, "katakana", "", ""), 
+                new JapaneseWord("サークル", "saakuru", new String[]{"club activity"}, "katakana", "", "")
             };
             
             var chapter8 = new JapaneseWord[]
@@ -433,12 +433,12 @@ namespace Japanese_Review
                 new JapaneseWord("そうじする", "soujisuru", new String[]{"to clean"}, "hiragana", "", ""), 
                 new JapaneseWord("でんわする", "denwasuru", new String[]{"to call"}, "hiragana", "", ""), 
                 new JapaneseWord("りょうりする", "ryourisuru", new String[]{"to cook"}, "hiragana", "", ""), 
-                new JapaneseWord("", "kamera", new String[]{"camera"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "karaoke", new String[]{"karaoke"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "tomato", new String[]{"tomato"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "paatii", new String[]{"party"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "baabekyuu", new String[]{"barbecue"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "hoomusutei", new String[]{"homestay", "living with a local family"}, "katakana", "", "")
+                new JapaneseWord("カメラ", "kamera", new String[]{"camera"}, "katakana", "", ""), 
+                new JapaneseWord("カラオケ", "karaoke", new String[]{"karaoke"}, "katakana", "", ""), 
+                new JapaneseWord("トマト", "tomato", new String[]{"tomato"}, "katakana", "", ""), 
+                new JapaneseWord("パーチー", "paatii", new String[]{"party"}, "katakana", "", ""), 
+                new JapaneseWord("バーベキュー", "baabekyuu", new String[]{"barbecue"}, "katakana", "", ""), 
+                new JapaneseWord("ホームステイ", "hoomusutei", new String[]{"homestay", "living with a local family"}, "katakana", "", "")
             };
             
             var chapter9 = new JapaneseWord[]
@@ -472,11 +472,11 @@ namespace Japanese_Review
                 new JapaneseWord("でる", "deru", new String[]{"to appear", "to exit", "to attend"}, "hiragana", "", ""), 
                 new JapaneseWord("うんどうする", "undousuru", new String[]{"to exercise"}, "hiragana", "", ""), 
                 new JapaneseWord("さんぽする", "sanposuru", new String[]{"to take a walk"}, "hiragana", "", ""), 
-                new JapaneseWord(" ", "gitaa", new String[]{"guitar"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "konsaato", new String[]{"concert"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "sukii", new String[]{"ski"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "piano", new String[]{"piano"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "piza", new String[]{"pizza"}, "katakana", "", "")
+                new JapaneseWord("ギター", "gitaa", new String[]{"guitar"}, "katakana", "", ""), 
+                new JapaneseWord("コンサート", "konsaato", new String[]{"concert"}, "katakana", "", ""), 
+                new JapaneseWord("スキー", "sukii", new String[]{"ski"}, "katakana", "", ""), 
+                new JapaneseWord("ピアノ", "piano", new String[]{"piano"}, "katakana", "", ""), 
+                new JapaneseWord("ピザ", "piza", new String[]{"pizza"}, "katakana", "", "")
             };
             
             var chapter10 = new JapaneseWord[]
@@ -517,10 +517,10 @@ namespace Japanese_Review
                 new JapaneseWord("きめる", "kimeru", new String[]{"to decide"}, "hiragana", "", ""), 
                 new JapaneseWord("りょこうする", "ryokousuru", new String[]{"to travel"}, "hiragana", "", ""), 
                 new JapaneseWord("れんしゅうする", "renshuusuru", new String[]{"to practice"}, "hiragana", "", ""), 
-                new JapaneseWord(" ", "kurejittokaado", new String[]{"credit card"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "keeki", new String[]{"cake"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "sakkaa", new String[]{"soccer"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "pantsu", new String[]{"pants"}, "katakana", "", "")
+                new JapaneseWord("クレジットカード", "kurejittokaado", new String[]{"credit card"}, "katakana", "", ""), 
+                new JapaneseWord("ケーキ", "keeki", new String[]{"cake"}, "katakana", "", ""), 
+                new JapaneseWord("サッカー", "sakkaa", new String[]{"soccer"}, "katakana", "", ""), 
+                new JapaneseWord("パンツ", "pantsu", new String[]{"pants"}, "katakana", "", "")
             };
             
             var chapter11 = new JapaneseWord[]
@@ -558,12 +558,12 @@ namespace Japanese_Review
                 new JapaneseWord("しょうかいする", "shoukaisuru", new String[]{"to introduce"}, "hiragana", "", ""), 
                 new JapaneseWord("ちこくする", "chikokusuru", new String[]{"to be late (for an appointment)"}, "hiragana", "", ""), 
                 new JapaneseWord("りゅうがくする", "ryuugakusuru", new String[]{"to study abroad"}, "hiragana", "", ""), 
-                new JapaneseWord("", "kyanpu", new String[]{"camp"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "doraibu", new String[]{"drive"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "biiru", new String[]{"beer"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "hosutofamirii", new String[]{"host family"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "ruumumeeto", new String[]{"roommate"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "saboru", new String[]{"to cut class", "to skip"}, "katakana", "", "")
+                new JapaneseWord("キャンプ", "kyanpu", new String[]{"camp"}, "katakana", "", ""), 
+                new JapaneseWord("ドライブ", "doraibu", new String[]{"drive"}, "katakana", "", ""), 
+                new JapaneseWord("ビール", "biiru", new String[]{"beer"}, "katakana", "", ""), 
+                new JapaneseWord("ホストファミリー", "hosutofamirii", new String[]{"host family"}, "katakana", "", ""), 
+                new JapaneseWord("ルームメート", "ruumumeeto", new String[]{"roommate"}, "katakana", "", ""), 
+                new JapaneseWord("サボル", "saboru", new String[]{"to cut class", "to skip"}, "katakana", "", "")
             };
             
             var chapter12 = new JapaneseWord[]
@@ -607,10 +607,10 @@ namespace Japanese_Review
                 new JapaneseWord("わかれる", "wakareru", new String[]{"to break up", "to separate"}, "hiragana", "", ""), 
                 new JapaneseWord("きんちょうする", "kinchousuru", new String[]{"to get nervous"}, "hiragana", "", ""), 
                 new JapaneseWord("しんぱいする", "shinpaisuru", new String[]{"to worry"}, "hiragana", "", ""), 
-                new JapaneseWord(" ", "juusu", new String[]{"juice"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "purezento", new String[]{"present"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "hoomushikku", new String[]{"homesick"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "mainasu", new String[]{"minus"}, "katakana", "", "")
+                new JapaneseWord("ジュース", "juusu", new String[]{"juice"}, "katakana", "", ""), 
+                new JapaneseWord("プレゼント", "purezento", new String[]{"present"}, "katakana", "", ""), 
+                new JapaneseWord("ホームシック", "hoomushikku", new String[]{"homesick"}, "katakana", "", ""), 
+                new JapaneseWord("マイナス", "mainasu", new String[]{"minus"}, "katakana", "", "")
             };
             
             var chapter13 = new JapaneseWord[]
@@ -646,12 +646,12 @@ namespace Japanese_Review
                 new JapaneseWord("みがく", "migaku", new String[]{"to brush teeth", "to polish"}, "hiragana", "", ""), 
                 new JapaneseWord("やくそくをまもる", "yakusokuwomamoru", new String[]{"to keep a promise"}, "hiragana", "", ""), 
                 new JapaneseWord("かんどうする", "kandousuru", new String[]{"to be moved", "to be touched"}, "hiragana", "", ""), 
-                new JapaneseWord("", "ueitaa", new String[]{"waiter"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "karee", new String[]{"curry"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "gorufu", new String[]{"golf"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "baiorin", new String[]{"violin"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "baiku", new String[]{"motorcycle"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "repooto", new String[]{"(term) paper"}, "katakana", "", "")
+                new JapaneseWord("ウエイター", "ueitaa", new String[]{"waiter"}, "katakana", "", ""), 
+                new JapaneseWord("カレー", "karee", new String[]{"curry"}, "katakana", "", ""), 
+                new JapaneseWord("ゴルフ", "gorufu", new String[]{"golf"}, "katakana", "", ""), 
+                new JapaneseWord("バイオリン", "baiorin", new String[]{"violin"}, "katakana", "", ""), 
+                new JapaneseWord("バイク", "baiku", new String[]{"motorcycle"}, "katakana", "", ""), 
+                new JapaneseWord("レポート", "repooto", new String[]{"(term) paper"}, "katakana", "", "")
             };
             
             var chapter14 = new JapaneseWord[]
@@ -682,18 +682,18 @@ namespace Japanese_Review
                 new JapaneseWord("くれる", "kureru", new String[]{"to give (me)"}, "hiragana", "", ""), 
                 new JapaneseWord("できる", "dekiru", new String[]{"to come into existence", "to be made"}, "hiragana", "", ""), 
                 new JapaneseWord("そうだんする", "soudansuru", new String[]{"to consult"}, "hiragana", "", ""), 
-                new JapaneseWord("", "gurasu", new String[]{"tumbler", "glass"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "kurisumasu", new String[]{"Christmas"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "chiketto", new String[]{"ticket"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "chokoreeto", new String[]{"chocolate"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "toreenaa", new String[]{"sweat shirt"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "nekutai", new String[]{"necktie"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "barentaindee", new String[]{"st. Valentine's Day"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "bideokamera", new String[]{"camcorder"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "howaitodee", new String[]{"White Day"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "mafuraa", new String[]{"winter scarf"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "manshon", new String[]{"multistory apartment building", "condominium"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "rajio", new String[]{"radio"}, "katakana", "", "")
+                new JapaneseWord("グラス", "gurasu", new String[]{"tumbler", "glass"}, "katakana", "", ""), 
+                new JapaneseWord("クリスマス", "kurisumasu", new String[]{"Christmas"}, "katakana", "", ""), 
+                new JapaneseWord("チケット", "chiketto", new String[]{"ticket"}, "katakana", "", ""), 
+                new JapaneseWord("チョコレート", "chokoreeto", new String[]{"chocolate"}, "katakana", "", ""), 
+                new JapaneseWord("トレーナー", "toreenaa", new String[]{"sweat shirt"}, "katakana", "", ""), 
+                new JapaneseWord("ネクタイ", "nekutai", new String[]{"necktie"}, "katakana", "", ""), 
+                new JapaneseWord("バレンタインデー", "barentaindee", new String[]{"st. Valentine's Day"}, "katakana", "", ""), 
+                new JapaneseWord("ビデオカメラ", "bideokamera", new String[]{"camcorder"}, "katakana", "", ""), 
+                new JapaneseWord("ホワイトデー", "howaitodee", new String[]{"White Day"}, "katakana", "", ""), 
+                new JapaneseWord("マフラー", "mafuraa", new String[]{"winter scarf"}, "katakana", "", ""), 
+                new JapaneseWord("マンション", "manshon", new String[]{"multistory apartment building", "condominium"}, "katakana", "", ""), 
+                new JapaneseWord("ラジオ", "rajio", new String[]{"radio"}, "katakana", "", "")
             };
             
             var chapter15 = new JapaneseWord[]
@@ -735,11 +735,11 @@ namespace Japanese_Review
                 new JapaneseWord("する", "suru", new String[]{"to decide on (an item)"}, "hiragana", "", ""), 
                 new JapaneseWord("そつぎょうする", "sotsugyousuru", new String[]{"to graduate"}, "hiragana", "", ""), 
                 new JapaneseWord("よやくする", "yoyakusuru", new String[]{"to reserve"}, "hiragana", "", ""), 
-                new JapaneseWord(" ", "intaanetto", new String[]{"Internet"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "night club", new String[]{"kurabu"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "jaketto", new String[]{"jacket"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "puuru", new String[]{"swimming pool"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "petto", new String[]{"pet"}, "katakana", "", "")
+                new JapaneseWord("インターネット", "intaanetto", new String[]{"Internet"}, "katakana", "", ""), 
+                new JapaneseWord("クラブ", "kurabu", new String[]{"night club"}, "katakana", "", ""), 
+                new JapaneseWord("ジャケット", "jaketto", new String[]{"jacket"}, "katakana", "", ""), 
+                new JapaneseWord("プール", "puuru", new String[]{"swimming pool"}, "katakana", "", ""), 
+                new JapaneseWord("ペット", "petto", new String[]{"pet"}, "katakana", "", "")
             };
             
             var chapter16 = new JapaneseWord[]
@@ -781,7 +781,7 @@ namespace Japanese_Review
                 new JapaneseWord("あんないする", "annaisuru", new String[]{"to show (someone) around"}, "hiragana", "", ""), 
                 new JapaneseWord("せつめいする", "setsumeisuru", new String[]{"to explain"}, "hiragana", "", ""), 
                 new JapaneseWord("むかえにいく", "mukaenikuru", new String[]{"to come to pick up"}, "hiragana", "", ""), 
-                new JapaneseWord(" ", "fairu", new String[]{"file", "portfolio"}, "katakana", "", "")
+                new JapaneseWord("ファイル", "fairu", new String[]{"file", "portfolio"}, "katakana", "", "")
             };
             
             var chapter17 = new JapaneseWord[]
@@ -825,14 +825,14 @@ namespace Japanese_Review
                 new JapaneseWord("しゅうしょくする", "shuushokusuru", new String[]{"to get a full-time job (at...)"}, "hiragana", "", ""), 
                 new JapaneseWord("する", "suru", new String[]{"to wear small items (necktie, watch, etc.)"}, "hiragana", "", ""), 
                 new JapaneseWord("りこんする", "rikonsuru", new String[]{"to get a divorce"}, "hiragana", "", ""), 
-                new JapaneseWord("", "kontakuto", new String[]{"contact lenses"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "sarariiman", new String[]{"salary man"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "shoppingumooru", new String[]{"shopping mall"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "supuun", new String[]{"spoon"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "nyuusu", new String[]{"news"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "panda", new String[]{"panda"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "buutsu", new String[]{"boots"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "hiitaa", new String[]{"heater"}, "katakana", "", "")
+                new JapaneseWord("コンタクト", "kontakuto", new String[]{"contact lenses"}, "katakana", "", ""), 
+                new JapaneseWord("サラリーマン", "sarariiman", new String[]{"salary man"}, "katakana", "", ""), 
+                new JapaneseWord("ショッピングモール", "shoppingumooru", new String[]{"shopping mall"}, "katakana", "", ""), 
+                new JapaneseWord("スプーン", "supuun", new String[]{"spoon"}, "katakana", "", ""), 
+                new JapaneseWord("ニュース", "nyuusu", new String[]{"news"}, "katakana", "", ""), 
+                new JapaneseWord("パンダ", "panda", new String[]{"panda"}, "katakana", "", ""), 
+                new JapaneseWord("ブーツ", "buutsu", new String[]{"boots"}, "katakana", "", ""), 
+                new JapaneseWord("ヒーター", "hiitaa", new String[]{"heater"}, "katakana", "", "")
             };
             
             var chapter18 = new JapaneseWord[]
@@ -871,16 +871,16 @@ namespace Japanese_Review
                 new JapaneseWord("こわれる", "kowareru", new String[]{"(something) breaks"}, "hiragana", "", ""), 
                 new JapaneseWord("よごれる", "yogoreru", new String[]{"to become dirty"}, "hiragana", "", ""), 
                 new JapaneseWord("ちゅうもんする", "chuumonsuru", new String[]{"to place an order"}, "hiragana", "", ""), 
-                new JapaneseWord(" ", "eakon", new String[]{"air conditioner"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "kaatin", new String[]{"curtain"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "kusshon", new String[]{"cushion"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "shanpuu", new String[]{"shampoo"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "suicchi", new String[]{"switch"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "suupu", new String[]{"soup"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "sukaato", new String[]{"skirt"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "sofa", new String[]{"sofa"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "taoru", new String[]{"towel"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "poppukoon", new String[]{"popcorn"}, "katakana", "", "") 
+                new JapaneseWord("エアコン", "eakon", new String[]{"air conditioner"}, "katakana", "", ""), 
+                new JapaneseWord("カーチン", "kaatin", new String[]{"curtain"}, "katakana", "", ""), 
+                new JapaneseWord("クッション", "kusshon", new String[]{"cushion"}, "katakana", "", ""), 
+                new JapaneseWord("シャンプー", "shanpuu", new String[]{"shampoo"}, "katakana", "", ""), 
+                new JapaneseWord("スイッチ", "suicchi", new String[]{"switch"}, "katakana", "", ""), 
+                new JapaneseWord("スープ", "suupu", new String[]{"soup"}, "katakana", "", ""), 
+                new JapaneseWord("スカート", "sukaato", new String[]{"skirt"}, "katakana", "", ""), 
+                new JapaneseWord("ソファ", "sofa", new String[]{"sofa"}, "katakana", "", ""), 
+                new JapaneseWord("タオル", "taoru", new String[]{"towel"}, "katakana", "", ""), 
+                new JapaneseWord("ポップコーン", "poppukoon", new String[]{"popcorn"}, "katakana", "", "") 
             };
             
             var chapter19 = new JapaneseWord[]
@@ -969,10 +969,10 @@ namespace Japanese_Review
                 new JapaneseWord("こうかんする", "koukansuru", new String[]{"to exchange"}, "hiragana", "", ""), 
                 new JapaneseWord("せいかつする", "seikatsusuru", new String[]{"to lead a life"}, "hiragana", "", ""), 
                 new JapaneseWord("へんぴんする", "henpinsuru", new String[]{"to return (merchandise)"}, "hiragana", "", ""), 
-                new JapaneseWord(" ", "anime", new String[]{"animation"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "suniikaa", new String[]{"sneakers"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "doitsu", new String[]{"Germany"}, "katakana", "", ""), 
-                new JapaneseWord(" ", "haihiiru", new String[]{"high heels"}, "katakana", "", "")
+                new JapaneseWord("アニメ", "anime", new String[]{"animation"}, "katakana", "", ""), 
+                new JapaneseWord("スニーカー", "suniikaa", new String[]{"sneakers"}, "katakana", "", ""), 
+                new JapaneseWord("ドイツ", "doitsu", new String[]{"Germany"}, "katakana", "", ""), 
+                new JapaneseWord("ハイヒール", "haihiiru", new String[]{"high heels"}, "katakana", "", "")
             };
 
         }
