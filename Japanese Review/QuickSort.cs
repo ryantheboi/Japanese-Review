@@ -5,20 +5,13 @@
  */
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.IO;
-using System.Numerics;
-using System.Runtime.CompilerServices;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Japanese_Review
 {
     public static class QuickSort
     {
-        public static int QuicksortSequential<T>(this IList<T> array) where T : IComparable<T>
+        public static int QuicksortSequential<T>(IList<T> array) where T : IComparable<T>
         {
             var n = array.Count;
             QuickSortS(array, 0, n - 1);

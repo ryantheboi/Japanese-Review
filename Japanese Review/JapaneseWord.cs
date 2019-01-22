@@ -8,7 +8,7 @@ namespace Japanese_Review
      * romaji - conversion of the japanese word to latin
      * english - a list of english definitions of the word
      * writing - the syllabic writing for the word (hiragana or katakana)
-     * kanji - a kanji character to represent the word, if I have learned it
+     * kanji - how the word is represented with kanji, if I have learned it
      */
     public class JapaneseWord
     {
