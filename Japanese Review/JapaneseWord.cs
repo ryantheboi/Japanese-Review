@@ -39,8 +39,10 @@ namespace Japanese_Review
                 new JapaneseWord("", new String[]{""}, "katakana", "", ""), 
             };
          */
-        public void initGenki()
+        public static JapaneseWord[][] initGenki()
         {
+            var genkiVocab = new JapaneseWord[20][];
+            
             var chapter1 = new JapaneseWord[]
             {
                 new JapaneseWord("あの", "ano", new String[] {"um..."}, "hiragana", "", ""),
@@ -975,6 +977,28 @@ namespace Japanese_Review
                 new JapaneseWord("ハイヒール", "haihiiru", new String[]{"high heels"}, "katakana", "", "")
             };
 
+            genkiVocab[0] = chapter1;
+            genkiVocab[1] = chapter2;
+            genkiVocab[2] = chapter3;
+            genkiVocab[3] = chapter4;
+            genkiVocab[4] = chapter5;
+            genkiVocab[5] = chapter6;
+            genkiVocab[6] = chapter7;
+            genkiVocab[7] = chapter8;
+            genkiVocab[8] = chapter9;
+            genkiVocab[9] = chapter10;
+            genkiVocab[10] = chapter11;
+            genkiVocab[11] = chapter12;
+            genkiVocab[12] = chapter13;
+            genkiVocab[13] = chapter14;
+            genkiVocab[14] = chapter15;
+            genkiVocab[15] = chapter16;
+            genkiVocab[16] = chapter17;
+            genkiVocab[17] = chapter18;
+            genkiVocab[18] = chapter19;
+            genkiVocab[19] = chapter20;
+
+            return genkiVocab;
         }
     }
 }

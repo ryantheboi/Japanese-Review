@@ -13,8 +13,10 @@ namespace Japanese_Review
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("");
             // 20 chapters of vocab from the genki textbook
             var genkiVocab = new JapaneseWord[20][];
+            genkiVocab = JapaneseWord.initGenki();
         }
     }
 }
