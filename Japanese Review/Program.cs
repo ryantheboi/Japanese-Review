@@ -32,10 +32,10 @@ namespace Japanese_Review
             
             // convert the input string into an array of int (chapters) to pass to initGenki()
             var chapters = new int[20]; // there can be no more than 20 chapters of vocab from genki
-            var idx = 0;
+            var idx = 0; // represents current index in chapters, and also the number of chapters specified
             
             // if there are multiple chapters separated by ','
-            if (chapterString.Contains('-'))
+            if (chapterString.Contains(','))
             {
                 var chapterArray = chapterString.Split(',');
                 foreach (var c in chapterArray)
@@ -79,10 +79,18 @@ namespace Japanese_Review
             else // just a single chapter number
             {
                 chapters[idx] = Convert.ToInt32(chapterString);
+                idx++;
+            }
+
+            // remove the extra 0s in the array of chapters
+            var prunedChapters = new int[idx];
+            for (var i = 0; i < idx; i++)
+            {
+                prunedChapters[i] = chapters[i];
             }
             
             var genkiVocab = new JapaneseWord[20][];
-            genkiVocab = JapaneseWord.initGenki();
+            genkiVocab = JapaneseWord.initGenki(prunedChapters);
             
 
         }

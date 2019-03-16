@@ -39,9 +39,9 @@ namespace Japanese_Review
                 new JapaneseWord("", new String[]{""}, "katakana", "", ""), 
             };
          */
-        public static JapaneseWord[][] initGenki()
+        public static JapaneseWord[][] initGenki(int[] chapters)
         {
-            var genkiVocab = new JapaneseWord[20][];
+            var genkiVocab = new JapaneseWord[chapters.Length][];
             
             var chapter1 = new JapaneseWord[]
             {
