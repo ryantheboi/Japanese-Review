@@ -8,6 +8,7 @@ namespace Japanese_Review
      * romaji - conversion of the japanese word to latin
      * english - a list of english definitions of the word
      * writing - the syllabic writing for the word (hiragana or katakana)
+     * adjective - if the word is an adjective, it is either 'na' or 'i'
      * kanji - how the word is represented with kanji, if I have learned it
      */
     public class JapaneseWord
@@ -33,10 +34,11 @@ namespace Japanese_Review
         /*
          *  Initialize 20 chapters of vocab from the Genki I & II textbooks
          *
+         * Every chapter contains the format:
             var chapter = new JapaneseWord[]
             {
-                new JapaneseWord("", new String[]{""}, "hiragana", "", ""), 
-                new JapaneseWord("", new String[]{""}, "katakana", "", ""), 
+                new JapaneseWord("", "", new String[]{""}, "hiragana", "", ""), 
+                new JapaneseWord("", "", new String[]{""}, "katakana", "", ""), 
             };
          */
         public void initGenki()
@@ -974,7 +976,134 @@ namespace Japanese_Review
                 new JapaneseWord("ドイツ", "doitsu", new String[]{"Germany"}, "katakana", "", ""), 
                 new JapaneseWord("ハイヒール", "haihiiru", new String[]{"high heels"}, "katakana", "", "")
             };
+        }
 
+        public void initAdvanced()
+        {
+            var randoseru = new JapaneseWord[]
+            {
+                new JapaneseWord("ランドセル", "randoseru", new String[]{"elementary school bag"}, "katakana", "", ""), 
+                new JapaneseWord("だんし", "danshi", new String[]{"boy"}, "hiragana", "", "男子"), 
+                new JapaneseWord("じょし", "joshi", new String[]{"girl"}, "hiragana", "", "女子"), 
+                new JapaneseWord("こんいろ", "kaniro", new String[]{"navy blue", "deep blue"}, "hiragana", "", "紺色"), 
+                new JapaneseWord("ふえる", "fueru", new String[]{"to increase"}, "hiragana", "", "増える"), 
+                new JapaneseWord("へる", "heru", new String[]{"to decrease"}, "hiragana", "", "減る"), 
+                new JapaneseWord("はいけい", "haikei", new String[]{"setting", "background"}, "hiragana", "", "背景"), 
+                new JapaneseWord("とうじょうする", "toujousuru", new String[]{"to appear"}, "hiragana", "", "登場する"), 
+                new JapaneseWord("かてい", "katei", new String[]{"home", "household"}, "hiragana", "", "家庭"), 
+                new JapaneseWord("しゅじんこう", "shujinkou", new String[]{"protagonist", "main character"}, "hiragana", "", "主人公"), 
+                new JapaneseWord("とどける", "todokeru", new String[]{"to deliver", "to forward"}, "hiragana", "", "届ける"), 
+                new JapaneseWord("わかもの", "wakamono", new String[]{"young person"}, "hiragana", "", "若者"), 
+                new JapaneseWord("ばなれ", "banare", new String[]{"separation"}, "hiragana", "", "離れ"), 
+                new JapaneseWord("しゅうにゅう", "shuunyuu", new String[]{"income", "revenue"}, "hiragana", "", "収入"), 
+                new JapaneseWord("かんけいする", "kankeisuru", new String[]{"to get involved"}, "hiragana", "", "関係する"), 
+                new JapaneseWord("~にかんする", "~nikansuru", new String[]{"concerning..."}, "hiragana", "", "に関する"), 
+                new JapaneseWord("~についての", "~nitsuiteno", new String[]{"concerning..."}, "hiragana", "", ""), 
+                new JapaneseWord("すすむ", "susumu", new String[]{"to advance", "to go forward"}, "hiragana", "", "進む"), 
+                new JapaneseWord("いけん", "iken", new String[]{"opinion"}, "hiragana", "", "意見"), 
+                new JapaneseWord("かんじる", "kanjiru", new String[]{"to feel", "to experience"}, "hiragana", "", "感じる"), 
+                new JapaneseWord("たいへん", "taihen", new String[]{"tough", "trouble"}, "hiragana", "", "大変"), 
+                new JapaneseWord("かわる", "kawaru", new String[]{"to be changed"}, "hiragana", "", "変わる"), 
+                new JapaneseWord("かえる", "kaeru", new String[]{"to change"}, "hiragana", "", "変える"), 
+                new JapaneseWord("かならず", "kanarazu", new String[]{"without exception"}, "hiragana", "", "必ず"), 
+                new JapaneseWord("ひつよう", "hitsuyou", new String[]{"necessary"}, "hiragana", "", "必要"), 
+                new JapaneseWord("かがく", "kagaku", new String[]{"chemistry"}, "hiragana", "", "化学"), 
+                new JapaneseWord("へんか", "henka", new String[]{"transformation"}, "hiragana", "", "変化"), 
+                new JapaneseWord("ばける", "bakeru", new String[]{"to take the form of"}, "hiragana", "", "化ける"), 
+                new JapaneseWord("むり", "muri", new String[]{"impossible"}, "hiragana", "", "無理"), 
+                new JapaneseWord("むりょう", "muryou", new String[]{"free"}, "hiragana", "", "無料"), 
+                new JapaneseWord("このは", "konoha", new String[]{"leaves"}, "hiragana", "", "木の葉"), 
+                new JapaneseWord("けっか", "kekka", new String[]{"result"}, "hiragana", "", "結果"), 
+                new JapaneseWord("くだもの", "kudamono", new String[]{"fruit"}, "hiragana", "", "果物"), 
+                new JapaneseWord("いっかい", "ikkai", new String[]{"once"}, "hiragana", "", "一回"), 
+                new JapaneseWord("かいとう", "kaitou", new String[]{"answer", "reply"}, "hiragana", "", "回答"), 
+                new JapaneseWord("こたえる", "kotaeru", new String[]{"to answer"}, "hiragana", "", "答える"), 
+                new JapaneseWord("まちがえる", "machigaeru", new String[]{"to make a mistake"}, "hiragana", "", "間違える"), 
+                new JapaneseWord("りゆう", "riyuu", new String[]{"reason"}, "hiragana", "", "理由"), 
+                new JapaneseWord("じゆう", "jiyuu", new String[]{"freedom"}, "hiragana", "", "自由"), 
+                new JapaneseWord("りかい", "rikai", new String[]{"understanding"}, "hiragana", "", "理解"), 
+                new JapaneseWord("かいけつ", "kaiketsu", new String[]{"solution"}, "hiragana", "", "解決"), 
+                new JapaneseWord("ちょうし", "choushi", new String[]{"rhythm"}, "hiragana", "", "調子"), 
+                new JapaneseWord("ちょうさ", "chousa", new String[]{"investigation"}, "hiragana", "", "調査"), 
+                new JapaneseWord("りょうほう", "ryouhou", new String[]{"both sides"}, "hiragana", "", "両方"), 
+                new JapaneseWord("さいあく", "saiaku", new String[]{"the worst"}, "hiragana", "", "最悪"), 
+                new JapaneseWord("さいきん", "saikin", new String[]{"recently"}, "hiragana", "", "最近"), 
+                new JapaneseWord("さいこう", "saikou", new String[]{"the best"}, "hiragana", "", "最高"), 
+                new JapaneseWord("さいしゅうかい", "saishuukai", new String[]{"last time"}, "hiragana", "", "最終回")
+            };
+            
+            var jinseiannai = new JapaneseWord[]
+            {
+                new JapaneseWord("じんせいあんあい", "jinseiannai", new String[]{"life guidance"}, "hiragana", "", "人生案内"), 
+                new JapaneseWord("だんせい", "dansei", new String[]{"man", "male"}, "hiragana", "", "男性"), 
+                new JapaneseWord("じょせい", "jousei", new String[]{"woman", "female"}, "hiragana", "", "じょせい"), 
+                new JapaneseWord("げんだい", "gendai", new String[]{"modern times", "present-day"}, "hiragana", "", "現代"), 
+                new JapaneseWord("げんきん", "genkin", new String[]{"cash"}, "hiragana", "", "現金"), 
+                new JapaneseWord("あらわれる", "arawareru", new String[]{"to appear"}, "hiragana", "", "現れる"), 
+                new JapaneseWord("げんじつ", "genjitsu", new String[]{"reality"}, "hiragana", "", "現実"), 
+                new JapaneseWord("じっか", "jikka", new String[]{"one's (parent's) home"}, "hiragana", "", "実家"),
+                new JapaneseWord("み", "mi", new String[]{"nut"}, "hiragana", "", "実"), 
+                new JapaneseWord("きょうみ", "kyoumi", new String[]{"interest"}, "hiragana", "", "興味"), 
+                new JapaneseWord("こうふん", "koufun", new String[]{"excitement"}, "hiragana", "", "興奮"), 
+                new JapaneseWord("がいこうてき", "gaikouteki", new String[]{"extroverted"}, "hiragana", "", "外向的"), 
+                new JapaneseWord("ないこうてき", "naikouteki", new String[]{"introverted"}, "hiragana", "", "内向的"), 
+                new JapaneseWord("むく", "muku", new String[]{"to turn toward"}, "hiragana", "", "向く"), 
+                new JapaneseWord("ぞうか", "zouka", new String[]{"growth", "increase"}, "hiragana", "", "増加"), 
+                new JapaneseWord("ふやす", "fuyasu", new String[]{"to add to", "to augment"}, "hiragana", "", "増やす"), 
+                new JapaneseWord("かんじょう", "kanjou", new String[]{"sentiment", "emotion"}, "hiragana", "", "感情"), 
+                new JapaneseWord("ひょうじょう", "hyoujou", new String[]{"facial expression"}, "hiragana", "", "表情"), 
+                new JapaneseWord("ひょうげん", "hyougen", new String[]{"expression"}, "hiragana", "", "表現"), 
+                new JapaneseWord("なさけ", "nasake", new String[]{"pity", "mercy", "sympathy"}, "hiragana", "", "情け"), 
+                new JapaneseWord("しょうのう", "shounou", new String[]{"acceptance of a present"}, "hiragana", "", "笑納"), 
+                new JapaneseWord("りょうしん", "ryoushin", new String[]{"conscience"}, "hiragana", "", "良心"), 
+                new JapaneseWord("りょうしつ", "ryoushitsu", new String[]{"good quality"}, "hiragana", "", "良質"), 
+                new JapaneseWord("よい", "yoi", new String[]{"excellent"}, "hiragana", "", "良い"), 
+                new JapaneseWord("げんしょう", "genshou", new String[]{"decrease"}, "hiragana", "", "減少"), 
+                new JapaneseWord("へらす", "herasu", new String[]{"to shorten"}, "hiragana", "", "減らす"), 
+                new JapaneseWord("ふきん", "fukin", new String[]{"neighborhood"}, "hiragana", "", "付近"), 
+                new JapaneseWord("つく", "tsuku", new String[]{"to be attached"}, "hiragana", "", "付く"), 
+                new JapaneseWord("つける", "tsukeru", new String[]{"to attach"}, "hiragana", "", "付ける"), 
+                new JapaneseWord("あいず", "aizu", new String[]{"signal", "sign"}, "hiragana", "", "合図"), 
+                new JapaneseWord("ごうけい", "goukei", new String[]{"sum total"}, "hiragana", "", "合計"), 
+                new JapaneseWord("つきあう", "tsukiau", new String[]{"to go out with"}, "hiragana", "", "付き合う"), 
+                new JapaneseWord("がっしゅく", "gasshuku", new String[]{"lodging", "training camp"}, "hiragana", "", "合宿"), 
+                new JapaneseWord("かいぎ", "kaigi", new String[]{"conference", "meeting"}, "hiragana", "", "会議"), 
+                new JapaneseWord("ぞくぞく", "zokuzoku", new String[]{"successively"}, "hiragana", "", "続々"), 
+                new JapaneseWord("つづく", "tsuzuku", new String[]{"to continue", "to last"}, "hiragana", "", "続く"), 
+                new JapaneseWord("つづける", "tsuzukeru", new String[]{"to keep on", "to keep up"}, "hiragana", "", "続ける"), 
+                new JapaneseWord("なんみん", "nanmin", new String[]{"inconvenienced person", "refugee"}, "hiragana", "", "難民"), 
+                new JapaneseWord("じしん", "jishin", new String[]{"self-confidence"}, "hiragana", "", "自信"), 
+                new JapaneseWord("あいて", "aite", new String[]{"companion", "partner"}, "hiragana", "", "相手"), 
+                new JapaneseWord("そうぞく", "souzoku", new String[]{"inheritance", "succession"}, "hiragana", "", "相続"), 
+                new JapaneseWord("まちあいしつ", "machiaishitsu", new String[]{"waiting room"}, "hiragana", "", "待合室"), 
+                new JapaneseWord("たいぐう", "taiguu", new String[]{"reception", "service"}, "hiragana", "", "待遇"), 
+                new JapaneseWord("こうりつ", "kouritsu", new String[]{"public (institution)"}, "hiragana", "", "公立")
+            };
+
+            var kaigainomusuko = new JapaneseWord[]
+            {
+                new JapaneseWord("そうだんしゃ", "soudansha", new String[]{"consultant"}, "hiragana", "", "相談者"),
+                new JapaneseWord("ねんれい", "nenrei", new String[]{"age"}, "hiragana", "", "年齢"),
+                new JapaneseWord("せいべつ", "seibetsu", new String[]{"gender"}, "hiragana", "", "性別"),
+                new JapaneseWord("もんだい", "mondai", new String[]{"problem"}, "hiragana", "", "問題"),
+                new JapaneseWord("じえいぎょう", "jieigyou", new String[]{"self-employed"}, "hiragana", "", "自営業"),
+                new JapaneseWord("かいがい", "kaigai", new String[]{"overseas"}, "hiragana", "", "海外"),
+                new JapaneseWord("こくない", "kokunai", new String[]{"domestic"}, "hiragana", "", "国内"),
+                new JapaneseWord("しかく", "shikaku", new String[]{"qualifications"}, "hiragana", "", "資格"),
+                new JapaneseWord("むすこ", "musuko", new String[]{"son"}, "hiragana", "", "息子"),
+                new JapaneseWord("きんりん", "kinrin", new String[]{"neighborhood"}, "hiragana", "", "近隣"),
+                new JapaneseWord("たび", "tabi", new String[]{"travel"}, "hiragana", "", "旅"),
+                new JapaneseWord("ふそく", "fusoku", new String[]{"lack"}, "hiragana", "", "不足"),
+                new JapaneseWord("もとめる", "motomeru", new String[]{"to ask", "to seek"}, "hiragana", "", "求める"),
+                new JapaneseWord("まなび", "manabi", new String[]{"learning"}, "hiragana", "", "学び"),
+                new JapaneseWord("りきせつする", "rikisetsusuru", new String[]{"to emphasize"}, "hiragana", "", "力説する"),
+                new JapaneseWord("やとう", "yatou", new String[]{"to hire"}, "hiragana", "", "雇う"),
+                new JapaneseWord("いなかもの", "inakamono", new String[]{"hick"}, "hiragana", "", "田舎者"),
+                new JapaneseWord("へいこうせん", "heikousen", new String[]{"lack of agreement", "parallel lines"}, "hiragana", "", "平行線"),
+                new JapaneseWord("つうかんする", "tsuukansuru", new String[]{"to be acutely aware of"}, "hiragana", "", "痛感する"),
+                new JapaneseWord("きぎょう", "kigyou", new String[]{"corporation"}, "hiragana", "", "企業"),
+                new JapaneseWord("さいようする", "saiyousuru", new String[]{"to employ"}, "hiragana", "", "採用する")
+            };
         }
     }
 }
