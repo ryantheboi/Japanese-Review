@@ -16,20 +16,16 @@ namespace Japanese_Review
     class Program
     {
         /*
-         * 
+         * Helper method to parse a string of chapters into an int array of chapters
+         * @param chapterString - a string representing the chapters of interest
+         * Format of chapterString:
+         *     [15] - just the chapter 15
+         *     [1, 15, 20] - the chapters 1, 15, and 20
+         *     [1-20] - the chapters 1 through 20
+         *     [1-12, 15, 18-20] - the chapters 1 through 12, 15, and 18 through 20
          */
-        
-        //Sample 02: Define Task/Wait Callback function
-
-        
-        static void Main(string[] args)
+        public int[] chapters(string chapterString)
         {
-            // 20 chapters of vocab from the genki textbook
-            
-            Console.WriteLine("What chapter(s) would you like to be quizzed on?");
-            Console.WriteLine("Option examples: [15] [1, 15, 20] [1-20] [1-5, 15-20] (exclude brackets)");
-            var chapterString = Console.ReadLine();
-            
             // convert the input string into an array of int (chapters) to pass to initGenki()
             var chapters = new int[20]; // there can be no more than 20 chapters of vocab from genki
             var idx = 0; // represents current index in chapters, and also the number of chapters specified
@@ -88,9 +84,22 @@ namespace Japanese_Review
             {
                 prunedChapters[i] = chapters[i];
             }
+
+            return prunedChapters;
+        }
+        
+        static void Main(string[] args)
+        {
+            // 20 chapters of vocab from the genki textbook
             
-            var genkiVocab = new JapaneseWord[20][];
-            genkiVocab = JapaneseWord.initGenki(prunedChapters);
+            Console.WriteLine("What chapter(s) would you like to be quizzed on?");
+            Console.WriteLine("Option examples: [15] [1, 15, 20] [1-20] [1-5, 15-20] (exclude brackets)");
+            var chapterString = Console.ReadLine();
+            
+            
+            
+            // initialize a Hashtable representing 20 chapters of Genki vocab
+            var genkiVocab = JapaneseWord.initGenki();
             
 
         }
