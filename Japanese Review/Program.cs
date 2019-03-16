@@ -24,7 +24,7 @@ namespace Japanese_Review
          *     [1-20] - the chapters 1 through 20
          *     [1-12, 15, 18-20] - the chapters 1 through 12, 15, and 18 through 20
          */
-        public int[] chapters(string chapterString)
+        public static int[] parseChapters(string chapterString)
         {
             // convert the input string into an array of int (chapters) to pass to initGenki()
             var chapters = new int[20]; // there can be no more than 20 chapters of vocab from genki
@@ -95,7 +95,7 @@ namespace Japanese_Review
             Console.WriteLine("What chapter(s) would you like to be quizzed on?");
             Console.WriteLine("Option examples: [15] [1, 15, 20] [1-20] [1-5, 15-20] (exclude brackets)");
             var chapterString = Console.ReadLine();
-            
+            var chapters = parseChapters(chapterString);
             
             
             // initialize a Hashtable representing 20 chapters of Genki vocab
