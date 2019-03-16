@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 
 namespace Japanese_Review
 {
@@ -39,9 +40,10 @@ namespace Japanese_Review
                 new JapaneseWord("", new String[]{""}, "katakana", "", ""), 
             };
          */
-        public static JapaneseWord[][] initGenki(int[] chapters)
+        public static Hashtable initGenki()
         {
-            var genkiVocab = new JapaneseWord[chapters.Length][];
+            var genkiVocab = new Hashtable();
+            
             
             var chapter1 = new JapaneseWord[]
             {
@@ -977,26 +979,26 @@ namespace Japanese_Review
                 new JapaneseWord("ハイヒール", "haihiiru", new String[]{"high heels"}, "katakana", "", "")
             };
 
-            genkiVocab[0] = chapter1;
-            genkiVocab[1] = chapter2;
-            genkiVocab[2] = chapter3;
-            genkiVocab[3] = chapter4;
-            genkiVocab[4] = chapter5;
-            genkiVocab[5] = chapter6;
-            genkiVocab[6] = chapter7;
-            genkiVocab[7] = chapter8;
-            genkiVocab[8] = chapter9;
-            genkiVocab[9] = chapter10;
-            genkiVocab[10] = chapter11;
-            genkiVocab[11] = chapter12;
-            genkiVocab[12] = chapter13;
-            genkiVocab[13] = chapter14;
-            genkiVocab[14] = chapter15;
-            genkiVocab[15] = chapter16;
-            genkiVocab[16] = chapter17;
-            genkiVocab[17] = chapter18;
-            genkiVocab[18] = chapter19;
-            genkiVocab[19] = chapter20;
+            genkiVocab.Add(1, chapter1);
+            genkiVocab.Add(2, chapter2);
+            genkiVocab.Add(3, chapter3);
+            genkiVocab.Add(4, chapter4);
+            genkiVocab.Add(5, chapter5);
+            genkiVocab.Add(6, chapter6);
+            genkiVocab.Add(7, chapter7);
+            genkiVocab.Add(8, chapter8);
+            genkiVocab.Add(9, chapter9);
+            genkiVocab.Add(10, chapter10);
+            genkiVocab.Add(11, chapter11);
+            genkiVocab.Add(12, chapter12);
+            genkiVocab.Add(13, chapter13);
+            genkiVocab.Add(14, chapter14);
+            genkiVocab.Add(15, chapter15);
+            genkiVocab.Add(16, chapter16);
+            genkiVocab.Add(17, chapter17);
+            genkiVocab.Add(18, chapter18);
+            genkiVocab.Add(19, chapter19);
+            genkiVocab.Add(20, chapter20);
 
             return genkiVocab;
         }
