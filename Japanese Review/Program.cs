@@ -200,7 +200,7 @@ namespace Japanese_Review
                         Console.Write("definitions: ");
                         foreach (string definition in word.English)
                         {
-                            Console.Write(definition + ", ");
+                            Console.Write(definition + "; ");
                             if (guess.Equals(definition))
                             {
                                 correct++;
@@ -236,7 +236,7 @@ namespace Japanese_Review
                         Console.Write("definitions: ");
                         foreach (string definition in word.English)
                         {
-                            Console.Write(definition + ", ");
+                            Console.Write(definition + "; ");
                             if (guess.Equals(definition))
                             {
                                 correct++;
