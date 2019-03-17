@@ -108,6 +108,7 @@ namespace Japanese_Review
             {
                 // english to hiragana or romaji quiz
                 case "english":
+                    Console.WriteLine("You may answer in hiragana or in romaji");
                     // add only hiragana words to the quiz
                     foreach (JapaneseWord word in wordBank)
                     {
@@ -123,7 +124,12 @@ namespace Japanese_Review
                     {
                         var idx = rand.Next(0, quizBank.Count - 1);
                         var word = (JapaneseWord)quizBank[idx];
-                        Console.WriteLine(word.English[0]);
+                        Console.WriteLine();
+                        foreach (var definition in word.English)
+                        {
+                            Console.Write(definition + "; ");
+                        }
+                        Console.WriteLine();
                         var guess = Console.ReadLine();
                         Console.WriteLine("answer: " + word.Japanese);
                         if (guess.Equals(word.Japanese) || guess.Equals(word.Romaji))
@@ -136,6 +142,7 @@ namespace Japanese_Review
                 
                 // hiragana to english quiz
                 case "hiragana":
+                    Console.WriteLine("You may only answer in english");
                     // add only hiragana words to the quiz
                     foreach (JapaneseWord word in wordBank)
                     {
@@ -151,12 +158,13 @@ namespace Japanese_Review
                     {
                         var idx = rand.Next(0, quizBank.Count - 1);
                         var word = (JapaneseWord)quizBank[idx];
+                        Console.WriteLine();
                         Console.WriteLine(word.Japanese);
                         var guess = Console.ReadLine();
                         Console.Write("definitions: ");
                         foreach (string definition in word.English)
                         {
-                            Console.Write(definition + ", ");
+                            Console.Write(definition + "; ");
                             if (guess.Equals(definition))
                             {
                                 correct++;
@@ -170,6 +178,7 @@ namespace Japanese_Review
                 
                 // katakana to english quiz
                 case "katakana":
+                    Console.WriteLine("You may only answer in english");
                     // add only katakana words to the quiz
                     foreach (JapaneseWord word in wordBank)
                     {
@@ -185,6 +194,7 @@ namespace Japanese_Review
                     {
                         var idx = rand.Next(0, quizBank.Count - 1);
                         var word = (JapaneseWord)quizBank[idx];
+                        Console.WriteLine();
                         Console.WriteLine(word.Japanese);
                         var guess = Console.ReadLine();
                         Console.Write("definitions: ");
@@ -204,6 +214,7 @@ namespace Japanese_Review
                 
                 // kanji to english quiz
                 case "kanji":
+                    Console.WriteLine("You may only answer in english");
                     // add only words with kanji to the quiz
                     foreach (JapaneseWord word in wordBank)
                     {
@@ -219,6 +230,7 @@ namespace Japanese_Review
                     {
                         var idx = rand.Next(0, quizBank.Count - 1);
                         var word = (JapaneseWord)quizBank[idx];
+                        Console.WriteLine();
                         Console.WriteLine(word.Kanji);
                         var guess = Console.ReadLine();
                         Console.Write("definitions: ");
