@@ -20,6 +20,7 @@ namespace Japanese_Review
         private String adjective;
         private String kanji;
 
+        /* JapaneseWord constructor */
         public JapaneseWord(String japanese, String romaji, String[] english, String writing, String adjective,
             String kanji)
         {
@@ -30,6 +31,14 @@ namespace Japanese_Review
             this.adjective = adjective;
             this.kanji = kanji;
         }
+
+        /* public gets */
+        public String Japanese => japanese;
+        public String Romaji => romaji;
+        public String[] English => english;
+        public String Writing => writing;
+        public String Adjective => adjective;
+        public String Kanji => kanji;
 
         /*
          *  Initialize 20 chapters of vocab from the Genki I & II textbooks

@@ -4,6 +4,7 @@
  */
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -97,10 +98,20 @@ namespace Japanese_Review
             var chapterString = Console.ReadLine();
             var chapters = parseChapters(chapterString);
             
-            
             // initialize a Hashtable representing 20 chapters of Genki vocab
             var genkiVocab = JapaneseWord.initGenki();
             
+            // initialize a vocab word bank for the quiz
+            var quizBank = new ArrayList();
+            foreach (var chapter in chapters)
+            {
+                var vocabList = ((JapaneseWord[])genkiVocab[chapter]);
+                foreach (var word in vocabList)
+                {
+                    quizBank.Add(word);
+                }
+            }
+
 
         }
     }
