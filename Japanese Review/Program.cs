@@ -16,6 +16,8 @@ namespace Japanese_Review
 {
     class Program
     {
+        private static Random rand = new Random();
+
         /*
          * Helper method to parse a string of chapters into an int array of chapters
          * @param chapterString - a string representing the chapters of interest
@@ -24,6 +26,7 @@ namespace Japanese_Review
          *     [1, 15, 20] - the chapters 1, 15, and 20
          *     [1-20] - the chapters 1 through 20
          *     [1-12, 15, 18-20] - the chapters 1 through 12, 15, and 18 through 20
+         * @return chapters - an int array, each int represents the chapter of interest
          */
         public static int[] parseChapters(string chapterString)
         {
@@ -89,10 +92,157 @@ namespace Japanese_Review
             return prunedChapters;
         }
         
+        /*
+         * Helper method to start a quiz
+         * @param wordBank - bank of Japanese words available for the quiz
+         * @param type - the words to quiz (english, hiragana, katakana, or kanji)
+         * @return score - the score on the quiz based on the number correct divided by total words in the quiz * 100
+         */
+        public static double quiz(ArrayList wordBank, string type)
+        {
+            // init quiz bank for words to quiz and a random number generator to select words from the bank
+            var quizBank = new ArrayList();
+            var correct = 0;
+            var totalWords = 1;
+            switch (type)
+            {
+                // english to hiragana or romaji quiz
+                case "english":
+                    // add only hiragana words to the quiz
+                    foreach (JapaneseWord word in wordBank)
+                    {
+                        if (word.Writing.Equals("hiragana"))
+                        {
+                            quizBank.Add(word);
+                        }
+                    }
+                    
+                    // begin the quiz and keep track of the score
+                    totalWords = quizBank.Count;
+                    while (quizBank.Count != 0)
+                    {
+                        var idx = rand.Next(0, quizBank.Count - 1);
+                        var word = (JapaneseWord)quizBank[idx];
+                        Console.WriteLine(word.English[0]);
+                        var guess = Console.ReadLine();
+                        Console.WriteLine("answer: " + word.Japanese);
+                        if (guess.Equals(word.Japanese) || guess.Equals(word.Romaji))
+                        {
+                            correct++;
+                        }
+                        quizBank.RemoveAt(idx);
+                    }
+                    break;
+                
+                // hiragana to english quiz
+                case "hiragana":
+                    // add only hiragana words to the quiz
+                    foreach (JapaneseWord word in wordBank)
+                    {
+                        if (word.Writing.Equals("hiragana"))
+                        {
+                            quizBank.Add(word);
+                        }
+                    }
+                    
+                    // begin the quiz and keep track of the score
+                    totalWords = quizBank.Count;
+                    while (quizBank.Count != 0)
+                    {
+                        var idx = rand.Next(0, quizBank.Count - 1);
+                        var word = (JapaneseWord)quizBank[idx];
+                        Console.WriteLine(word.Japanese);
+                        var guess = Console.ReadLine();
+                        Console.Write("definitions: ");
+                        foreach (string definition in word.English)
+                        {
+                            Console.Write(definition + ", ");
+                            if (guess.Equals(definition))
+                            {
+                                correct++;
+                                break;
+                            }
+                        }
+                        Console.WriteLine();
+                        quizBank.RemoveAt(idx);
+                    }
+                    break;
+                
+                // katakana to english quiz
+                case "katakana":
+                    // add only katakana words to the quiz
+                    foreach (JapaneseWord word in wordBank)
+                    {
+                        if (word.Writing.Equals("katakana"))
+                        {
+                            quizBank.Add(word);
+                        }
+                    }
+                    
+                    // begin the quiz and keep track of the score
+                    totalWords = quizBank.Count;
+                    while (quizBank.Count != 0)
+                    {
+                        var idx = rand.Next(0, quizBank.Count - 1);
+                        var word = (JapaneseWord)quizBank[idx];
+                        Console.WriteLine(word.Japanese);
+                        var guess = Console.ReadLine();
+                        Console.Write("definitions: ");
+                        foreach (string definition in word.English)
+                        {
+                            Console.Write(definition + ", ");
+                            if (guess.Equals(definition))
+                            {
+                                correct++;
+                                break;
+                            }
+                        }
+                        Console.WriteLine();
+                        quizBank.RemoveAt(idx);
+                    }
+                    break;
+                
+                // kanji to english quiz
+                case "kanji":
+                    // add only words with kanji to the quiz
+                    foreach (JapaneseWord word in wordBank)
+                    {
+                        if (!word.Kanji.Equals(""))
+                        {
+                            quizBank.Add(word);
+                        }
+                    }
+                    
+                    // begin the quiz and keep track of the score
+                    totalWords = quizBank.Count;
+                    while (quizBank.Count != 0)
+                    {
+                        var idx = rand.Next(0, quizBank.Count - 1);
+                        var word = (JapaneseWord)quizBank[idx];
+                        Console.WriteLine(word.Kanji);
+                        var guess = Console.ReadLine();
+                        Console.Write("definitions: ");
+                        foreach (string definition in word.English)
+                        {
+                            Console.Write(definition + ", ");
+                            if (guess.Equals(definition))
+                            {
+                                correct++;
+                                break;
+                            }
+                        }
+                        Console.WriteLine();
+                        quizBank.RemoveAt(idx);
+                    }
+                    break;
+            }
+
+            return ((double)correct/totalWords) * 100;
+        }
+        
         static void Main(string[] args)
         {
-            // 20 chapters of vocab from the genki textbook
-            
+            // ask for chapters of interest
             Console.WriteLine("What chapter(s) would you like to be quizzed on?");
             Console.WriteLine("Option examples: [15] [1, 15, 20] [1-20] [1-5, 15-20] (exclude brackets)");
             var chapterString = Console.ReadLine();
@@ -102,17 +252,25 @@ namespace Japanese_Review
             var genkiVocab = JapaneseWord.initGenki();
             
             // initialize a vocab word bank for the quiz
-            var quizBank = new ArrayList();
+            var wordBank = new ArrayList();
             foreach (var chapter in chapters)
             {
                 var vocabList = ((JapaneseWord[])genkiVocab[chapter]);
                 foreach (var word in vocabList)
                 {
-                    quizBank.Add(word);
+                    wordBank.Add(word);
                 }
             }
-
-
+            
+            // ask for type of quiz
+            Console.WriteLine("What would you like to be quizzed on?");
+            Console.WriteLine("Options: [english] [hiragana] [katakana] [kanji]");
+            var type = Console.ReadLine();
+            
+            // set output encoding to recognize Japanese characters, and start the quiz
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            var score = quiz(wordBank, type);
+            Console.WriteLine("Your score for the quiz is: " + Math.Round(score) + "%!");
         }
     }
 }

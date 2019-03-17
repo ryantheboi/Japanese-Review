@@ -729,7 +729,7 @@ namespace Japanese_Review
                 new JapaneseWord("ばんぐみ", "bangumi", new String[]{"broadcast program"}, "hiragana", "", ""), 
                 new JapaneseWord("はっぴょう", "happyou", new String[]{"presentation"}, "hiragana", "", ""), 
                 new JapaneseWord("ほけん", "hoken", new String[]{"insurance"}, "hiragana", "", ""), 
-                new JapaneseWord("よてい", "yotei", new String[]{"yotei"}, "hiragana", "", ""), 
+                new JapaneseWord("よてい", "yotei", new String[]{"plan", "schedule"}, "hiragana", "", ""), 
                 new JapaneseWord("りょかん", "ryokan", new String[]{"Japanese inn"}, "hiragana", "", ""), 
                 new JapaneseWord("わりびきけん", "waribikiken", new String[]{"discount coupon"}, "hiragana", "", ""), 
                 new JapaneseWord("ひろい", "hiroi", new String[]{"spacious", "wide"}, "hiragana", "i", ""), 
